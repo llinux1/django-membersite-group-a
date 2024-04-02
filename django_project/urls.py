@@ -7,7 +7,8 @@ urlpatterns = [
     path("accounts/", include("accounts.urls")),  # new
     path("accounts/", include("django.contrib.auth.urls")),
     path("", TemplateView.as_view(template_name="home.html"), name="home"),
-    path("repair/", include('repair.urls')),  # Include the app's URLs
+    path("repair/", include('repair.urls')),
+
 ]
 
 
