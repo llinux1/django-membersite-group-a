@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Auto Repair Shop</title>
+<style>
+  body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #102a44; /* Dark blue for auto repair theme */
+    padding: 0 20px;
+    color: white;
+  }
+
+  .navbar .logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar .logo img {
+    height: 60px; /* Logo size */
+  }
+
+  .navbar ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  .navbar ul li {
+    padding: 0 15px;
+  }
+
+  .navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+
+  .navbar ul li a:hover {
+    color: #ffdd00; /* Highlight color when hovering over menu items */
+  }
+
+  .navbar .search-icon {
+    cursor: pointer;
+    font-size: 1.5rem; /* Larger search icon */
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+    }
+
+    .navbar ul {
+      flex-direction: column;
+    }
+
+    .navbar ul li {
+      padding: 10px 0;
+    }
+  }
+</style>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="logo">
+    <img src="picture/mamba1.jpg" alt="Auto Repair Shop Logo">
+    <span>Auto Repair Shop</span>
+  </div>
+
+  <ul>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">Booking</a></li>
+    <li><a href="#">About Us</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+
+  <div class="search-icon">
+    🔍
+  </div>
+</nav>
+
+</body>
+</html>

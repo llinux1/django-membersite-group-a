@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Create Your Account</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+  }
+  .container {
+    background: linear-gradient(to bottom, #FFFFFF 0%, #5593F0 100%);
+    padding: 40px;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  h2 {
+    color: #333;
+    margin-bottom: 0.5em;
+  }
+  p {
+    margin-bottom: 1em;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  input[type="email"],
+  input[type="text"],
+  input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  .checkbox-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  button {
+    width: calc(100% - 20px);
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  @media (min-width: 768px) {
+    .container {
+      padding: 50px;
+      margin-top: 30px;
+    }
+    input[type="email"],
+    input[type="text"],
+    input[type="password"],
+    button {
+      width: 80%;
+    }
+    .checkbox-container label {
+      margin-left: 5px;
+    }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="logo">
+    <img src="picture/mamba1.jpg" alt="Logo" class="logo-img">
+  </div>
+  <h2>Create your Account</h2>
+  <p>Create an account to view and manage your projects.</p>
+  <form action="#" method="POST">
+    <input type="email" placeholder="Email" required>
+    <input type="text" placeholder="Username" required>
+    <input type="password" placeholder="Password" required>
+    <input type="password" placeholder="Confirm Password" required>
+    <div class="checkbox-container">
+      <input type="checkbox" id="enroll">
+      <label for="enroll">Enroll in xxx</label>
+    </div>
+    <button type="submit">Create</button>
+  </form>
+</div>
+</body>
+</html>
